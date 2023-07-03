@@ -24,7 +24,7 @@ const Pessoa = function(){
         qualPai = prompt("insira o nome do pai");
         addFilho = prompt("insira o nome do filho");
         
-        indicePai = pessoa.pai.findIndex(e => e.nome === "vilson");
+        indicePai = pessoa.pai.findIndex(e => e.nome === qualPai);
         pessoa.pai[indicePai].filhos.push(addFilho);
 
 
